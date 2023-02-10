@@ -47,7 +47,7 @@ export function HomeScreen() {
       <YStack space="$4" maxWidth={300}>
         <YStack>
           <H1>Custom Animation</H1>
-          <Paragraph mt={-3}>This carousel attempts to create a parallax effect with the circle in the middle. On react-native and react-native-web, the interpolated values animate correctly. On Tamagui's web compiler, the values don't update, so no animation is visible. Open on native and click and drag to see the circle move. </Paragraph>
+          <Paragraph mt={-3}>This carousel attempts to create a parallax effect with the circle in the middle. On react-native and react-native-web, the interpolated values animate correctly. On Tamagui, the values don't update, so no animation is visible. Open on native and click and drag to see the circle move. </Paragraph>
         </YStack>
         <Stack h="$20">
           <Carousel width={300} data={['1', '2', '3']} renderItem={({ item, animationValue }) => <SlideParallax item={item} animationValue={animationValue} />} />
